@@ -47,7 +47,7 @@ that was discovered and fixed later.
   GPT-partitioned drive didn't work and the fix was to change partition table to
   MBR.
 - Linux install that (can be) loaded in UEFI mode.
-- [CHIPSEC](https://github.com/chipsec/chipsec)
+- [CHIPSEC](https://github.com/chipsec/chipsec) version 1. Ivy-Bridge support was dropped in version 2.
 - Recent [flashrom](https://flashrom.org). At least version 1.0 is required,
   older versions of flashrom do not have `--ifd` option. (Workaround by using
   layout file is possible, but it's more complicated.)

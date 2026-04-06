@@ -296,6 +296,11 @@ will fail. But you can back up the `bios`:
 sudo flashrom -p internal -r bios_backup.rom --ifd -i bios
 ```
 
+If this command fails with the error message 
+`/dev/mem mmap failed: Operation not permitted`,
+set `GRUB_CMDLINE_LINUX_DEFAULT="quiet iomem=relaxed"`
+in /etc/default/grub. Then run `sudo update-grub`, reboot and try again.
+
 #### Restoring
 If you will even need to flash it back, use `--ifd -i bios` as well:
 ```
